@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font {
+  font-family: "Fredericka the Great", serif;
+}
+body {
+  background-image: linear-gradient(#5b408c74, #5b408ca7),
+  url(../imgs/Space-Background-Images.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white !important;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.125rem;
+}
+
+.content {
+  max-width: 900px !important;
+  margin: auto !important;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.103));
+  font-size: 1.9375rem;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  animation: waviy 1s infinite;
+  animation-delay: calc(0.1s * var(--v));
+  transition: animation 300ms;
+}
+h1 span:first-child {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 4.375rem;
+}
+
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-15px);
+  }
+}
+
+h2 i {
+  font-size: 1.125rem;
+}
+
+.form-control:focus {
+  border-color: #8a6eb9;
+  box-shadow: 0 0 0 0.25rem #d0abfb80;
+}
+
+.bttn {
+  color: #fff;
+  background-color: #5b408cdd;
+  border: #583f80e6;
+  border-radius: 10px;
+}
+.bttn:hover {
+  box-shadow: 0 0 5px #7a61a8dd, 0 0 25px #7a61a8dd, 0 0 90px #7a61a8dd,
+    0 0 200px #7a61a8dd;
+}
+
+.btn-main {
+  color: #583f80e6;
+  border: 1px solid #583f80e6;
+}
+.btn-main:hover {
+  color: #fff;
+  background-color: #583f80e6;
+}
+
+table th  {
+  color: #6d42b6 !important;
+  font-size: 1.2rem !important;
+  font-weight: 900 !important;
+}
+
+table tbody td {
+  color: #583f80e6 !important;
+}
+
+
+/*              Sweet Alert             */
+.swal-title {
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #583f80e6;
+  color: #fff;
+  box-shadow: 0px 1px 1px rgba(133, 94, 200, 0.3);
+  margin-top: 0 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  }
+  
+  .swal-text {
+  padding: 1.0625rem;
+  font-size: 0.875rem;
+  line-height: 1.4375rem;
+  font-family: 'Space Grotesk', sans-serif !important;
+  }
+  
+  .swal-footer {
+  background-color: #fff;
+  border-top: 1px solid #e9eef1;
+  overflow: hidden;
+  }
+  
+  .swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #583f80e6;
+  color: #fff;
+  font-size: 12px;
+  border: 1px solid #583f80e6;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .swal-button:not([disabled]):hover {
+  background-color: #5b408cdd;
+  border-color: #5b408cdd;
+  }
